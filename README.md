@@ -1,7 +1,7 @@
 # Mariadb-mysql
 Una simple Base de datos creada a partir de Dockerfiles uno cliente y otro servidor, con la finalidad de generar y capturar el trafico MySql que se genera entre ambos.
 
-# La instalacion:
+# La instalacion
 Para construir el contenedor del servidor:
 ```
 $ docker build -t mysql-server .
@@ -12,7 +12,7 @@ $ docker build -t mysql-client2 -f Dockerfile.client .
 ```
 
 
-# Correr los contenedores:
+# Correr los contenedores
 
 
 
@@ -32,3 +32,7 @@ Ahora se puede validar que haya tráfico entre cliente y servidor con el command
 ```
 $ docker exec -it server tcpdump -i any -n -nn port 3306
 ```
+
+# Muestra del trafico
+
+https://www.youtube.com/watch?v=HI1-H4DpKX4&ab_channel=PlanA
