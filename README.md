@@ -27,7 +27,7 @@ Correr el contenedor del cliente:
 $ docker run -d --name client --link server mysql-client
 ```
 
-#Lectura de trafico
+# Lectura de trafico
 Ahora se puede validar haya tráfico entre cliente y servidor con el commando:
 ```
 $ docker exec -it server tcpdump -i any -n -nn port 3306
