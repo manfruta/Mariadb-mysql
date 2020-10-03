@@ -3,28 +3,28 @@ Una simple Base de datos creada a partir de Dockerfiles uno cliente y otro servi
 
 # La instalacion:
 Para construir el contenedor del servidor:
+```
 $ docker build -t mysql-server .
-
+```
 Para construie el contenedor del cliente:
-
+```
 $ docker build -t mysql-client -f Dockerfile.client .
+```
+
+
+# Correr los contenedores:
 
 
 
-### postgres Version
+#### Acá lo importante es la opción –link server que permite la comunicación entre el cliente y el servidor
+
+Correr el contenedor del servidor:
+```
+$ docker run -d  --name server mysql-server 
+```
+Correr el contenedor del cliente:
+```
+$ docker run -d --name client --link server mysql-client
+```
 
 
-
-#### Obtencion de ip del contenedor de docker
-
-
-
-estoy pal pico `frodenas/postgresql`
-
-
-$ docker run -d --name postgresql -p 5432:5432 frodenas/postgresql
-
-variables:
-
-* `POSTGRES_USERNAME` to set a specific username
-* `POSTGRES_PASSWORD` to set a specific password
