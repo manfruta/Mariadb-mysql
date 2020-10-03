@@ -8,7 +8,7 @@ $ docker build -t mysql-server .
 ```
 Para construie el contenedor del cliente:
 ```
-$ docker build -t mysql-client -f Dockerfile.client .
+$ docker build -t mysql-client2 -f Dockerfile.client .
 ```
 
 
@@ -24,11 +24,11 @@ $ docker run -d  --name server mysql-server
 ```
 Correr el contenedor del cliente:
 ```
-$ docker run -d --name client --link server mysql-client
+$ docker run -d --name client2 --link server mysql-client2
 ```
 
 # Lectura de trafico
-Ahora se puede validar haya tráfico entre cliente y servidor con el commando:
+Ahora se puede validar que haya tráfico entre cliente y servidor con el commando:
 ```
 $ docker exec -it server tcpdump -i any -n -nn port 3306
 ```
