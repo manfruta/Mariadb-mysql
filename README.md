@@ -10,7 +10,10 @@ Para construie el contenedor del cliente:
 ```
 $ docker build -t mysql-client2 -f Dockerfile.client .
 ```
-
+Correr el contenedor del Polymorph:
+```
+$ docker build -t Polymorph -f Dockerfile.polymorph .
+```
 
 # Correr los contenedores
 
@@ -26,6 +29,11 @@ Correr el contenedor del cliente:
 ```
 $ docker run -d --name client2 --link server mysql-client2
 ```
+Correr el contenedor del Polymorph:
+```
+$ docker run --privileged -it <id de imagen>
+```
+
 
 # Lectura de trafico
 Ahora se puede validar que haya tráfico entre cliente y servidor con el commando:
