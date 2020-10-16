@@ -10,7 +10,7 @@ Para construie el contenedor del cliente:
 ```
 $ docker build -t mysql-client2 -f Dockerfile.client .
 ```
-Correr el contenedor del Polymorph:
+Para contruir el contenedor del Polymorph:
 ```
 $ docker build -t Polymorph -f Dockerfile.polymorph .
 ```
