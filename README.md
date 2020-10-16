@@ -41,7 +41,10 @@ Ahora se puede validar que haya tráfico entre cliente y servidor con el command
 $ docker exec -it server tcpdump -i any -n -nn port 3306
 ```
 
-# Muestra del trafico
+# Muestra del trafico MySQL
 
 #### https://www.youtube.com/watch?v=HI1-H4DpKX4&ab_channel=PlanA
 
+# Muestra de modificación de trafico MySQL
+
+#### https://www.youtube.com/watch?v=_GyCHvpEExo&ab_channel=PlanA
