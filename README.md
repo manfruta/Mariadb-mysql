@@ -48,3 +48,5 @@ $ docker exec -it server tcpdump -i any -n -nn port 3306
 # Muestra de modificación de trafico MySQL
 
 #### https://www.youtube.com/watch?v=OH_bchaadh0&ab_channel=PlanA
+
+#  Muestra  métricas de red  con protocolo MySQL
