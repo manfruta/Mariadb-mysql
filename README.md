@@ -50,3 +50,5 @@ $ docker exec -it server tcpdump -i any -n -nn port 3306
 #### https://www.youtube.com/watch?v=OH_bchaadh0&ab_channel=PlanA
 
 #  Muestra  métricas de red  con protocolo MySQL
+
+#### https://www.youtube.com/watch?v=A9SuWcVIwYM&ab_channel=Yeyoldo
