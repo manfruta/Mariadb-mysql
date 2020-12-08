@@ -1,5 +1,0 @@
-1. alert tcp any any -> 172.17.0.2 3306 (msg:"Regla PCRE"; pcre:"/(\ select)|(\ *)|(test2)/";sid:1000003:)
-2. alert tcp any any -> 172.17.0.2 3306 (msg:"Active dinamic";flags:S,CE; tag:session,10,seconds;sid :1000002;)
-3. alert  tcp any any  -> 172.17.0.2 3306 (msg:" Regla offset";  content:"select ";  offset :39; sid :1000001;)
-4. alert  tcp any any  -> 172.17.0.2  3306 (msg:"oversize, with dsize ruler ";  dsize :>90;sid :1000002;)
-5. alert tcp any any -> 172.17.0.2  3306 (msg: "MYSQL show databases,Regla FLow";sid:1000002;flow:to_server; content:"test2.tablaoverwacht";)
