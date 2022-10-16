@@ -1,4 +1,4 @@
-# Tarea N°1 ARQUITECTURAS DE ALTA DISPONIBILIDAD
+# Tarea N°1 ARQUITECTURAS DE ALTA DISPONIBILIDAD, Diego Venegas-Marcelo Luengo.
 Una simple Base de datos creada a partir de Dockerfiles uno cliente y otro servidor, con la finalidad de generar y capturar el trafico MySql que se genera entre ambos.
 
 # La instalacion
